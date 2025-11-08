@@ -7,15 +7,17 @@
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
 
 
-## Demo 🚗
-
-
-![Demo](https://github.com/ilyas-ourara/realtime-traffic-tracker/raw/main/demo.gif)
 
 
 ## 📋 Description
 
 Système de détection et suivi de véhicules en temps réel utilisant YOLOv11 (Ultralytics) et ByteTrack. Le projet fournit un pipeline complet pour l'analyse du trafic avec comptage IN/OUT, affichage professionnel des bounding boxes et panneau de statistiques interactif.
+
+## Demo 🚗
+
+
+![Demo](https://github.com/ilyas-ourara/realtime-traffic-tracker/raw/main/demo.gif)
+
 
 ### ✨ Fonctionnalités
 
