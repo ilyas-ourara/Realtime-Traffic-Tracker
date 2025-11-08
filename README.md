@@ -147,75 +147,11 @@ self.ligne_sortie_v2 = [72, 303, 439, 303]  # [x1, y1, x2, y2]
 - **Bounding boxes** : Badges colorés avec ID et classe
 - **Indicateurs visuels** : Ligne de détection et points de passage
 
-## ⚙️ Configuration avancée
 
-### Optimisation performance
 
-```python
-# Dans tracker.py
-# Réduire la résolution pour plus de vitesse
-frame = cv2.resize(frame, (640, 640))
 
-# Ajuster le seuil de confiance
-if confidence[i] > 0.7:  # Plus strict = moins de faux positifs
-```
 
-### Personnalisation visuelle
-
-```python
-# Couleurs par classe
-colors = {
-    "car": (255, 0, 0),      # Rouge
-    "truck": (0, 0, 255),    # Bleu
-    "motorcycle": (255, 255, 0),  # Jaune
-    "bus": (0, 255, 0)       # Vert
-}
-```
-
-## 🔧 Dépannage
-
-### Problèmes courants
-
-**Erreur GUI sur Linux sans interface graphique :**
-```python
-# Commenter ces lignes dans tracker.py
-# cv2.imshow("Tracking", frame)
-# cv2.waitKey(1)
-# cv2.destroyAllWindows()
-```
-
-**Performance lente :**
-- Utiliser un modèle plus léger (yolov8n.pt)
-- Réduire la résolution d'entrée
-- Activer CUDA si disponible
-
-**Coordonnées incorrectes :**
-- Vérifier que les coordonnées correspondent à la résolution
-- Ajuster après redimensionnement si nécessaire
-
-## 📈 Performances
-
-### Benchmarks typiques
-
-| Modèle | Résolution | FPS (CPU) | FPS (GPU) | Précision |
-|--------|------------|-----------|-----------|-----------|
-| YOLOv8n | 640x640 | ~15 | ~45 | 85% |
-| YOLOv8s | 640x640 | ~12 | ~35 | 88% |
-| YOLOv8m | 640x640 | ~8 | ~25 | 90% |
-
-*Tests sur Intel i7-9700K + RTX 3060*
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Voici comment contribuer :
-
-1. Forkez le projet
-2. Créez une branche feature (`git checkout -b feature/nouvelle-fonctionnalite`)
-3. Committez vos changements (`git commit -am 'Ajout nouvelle fonctionnalité'`)
-4. Pushez vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
-5. Ouvrez une Pull Request
-
-## 📝 Roadmap détaillée
+## 📝 Roadmap 
 
 ### Phase 1 - Base (✅ Terminé)
 - [x] Détection YOLOv11
@@ -241,36 +177,6 @@ Les contributions sont les bienvenues ! Voici comment contribuer :
 - [ ] Base de données
 - [ ] Notifications temps réel
 
-## 📄 License
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## 👨‍💻 Auteur
-
-**Votre Nom**
-- GitHub: [@votre-username](https://github.com/votre-username)
-- LinkedIn: [Votre Profil](https://linkedin.com/in/votre-profil)
-- Email: votre.email@example.com
-
-## 🙏 Remerciements
-
-- [Ultralytics](https://github.com/ultralytics/ultralytics) pour YOLOv8/v11
-- [ByteTrack](https://github.com/ifzhang/ByteTrack) pour l'algorithme de tracking
-- [OpenCV](https://opencv.org/) pour le traitement d'images
-- [CVZone](https://github.com/cvzone/cvzone) pour les utilitaires CV
-
-## 📞 Support
-
-Si vous rencontrez des problèmes ou avez des questions :
-
-1. Consultez la section [Dépannage](#-dépannage)
-2. Recherchez dans les [Issues existantes](https://github.com/votre-username/traffic-vision-yolov11/issues)
-3. Créez une [nouvelle issue](https://github.com/votre-username/traffic-vision-yolov11/issues/new) avec :
-   - Description du problème
-   - Configuration système
-   - Logs d'erreur
-   - Étapes pour reproduire
-
----
 
 ⭐ **N'hésitez pas à star le projet si il vous a aidé !** ⭐
