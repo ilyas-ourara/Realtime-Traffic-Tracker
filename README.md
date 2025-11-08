@@ -1,9 +1,19 @@
+
 # Traffic Vision YOLOv11 🚗📊
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![YOLOv11](https://img.shields.io/badge/YOLOv11-Ultralytics-orange.svg)](https://github.com/ultralytics/ultralytics)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.0+-green.svg)](https://opencv.org/)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
+
+
+## Demo 🚗
+
+```
+![Demo](demo.gif)
+```
+
+
 
 ## 📋 Description
 
