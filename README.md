@@ -10,7 +10,7 @@
 ## Demo 🚗
 
 
-![Demo]([https://github.com/ilyas-ourara/Realtime-Traffic-Tracker/demo.gif](https://github.com/ilyas-ourara/Realtime-Traffic-Tracker/blob/main/demo.gif))
+![Demo](demo.gif)
 
 
 ## 📋 Description
